@@ -1,0 +1,59 @@
+body {
+  background: hsl(0, 0%, 7%);
+  color: hsl(0, 0%, 84%);
+  text-align: center;
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+}
+
+.modal-title {
+  color: black;
+}
+
+post {
+  display: block;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  background: hsl(0, 0%, 0%);
+  overflow: hidden;
+  margin: 0 0 0 24%;
+  border-radius: 10px;
+  width: 45rem;
+}
+
+postTitle {
+  font-size: 2rem;
+}
+
+.intro-image {
+  border-radius: 50%;
+}
+
+.sub-link {
+  animation: sub-link-not-hover 1s ease-in-out forwards;
+}
+
+.sub-link:hover {
+  animation: sub-link-hover 1s ease-in-out forwards;
+}
+
+@keyframes sub-link-hover {
+  from {
+    color: white;
+  }
+  to {
+    color: hsl(0, 0%, 44%);
+  }
+}
+
+@keyframes sub-link-not-hover {
+  from {
+    color: hsl(0, 0%, 44%);
+  }
+  to {
+    color: white;
+  }
+}
